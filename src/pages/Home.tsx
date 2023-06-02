@@ -26,12 +26,14 @@ export const Home = () => {
   return (
     <div className="container">
       <h1>Titles:</h1>
-      {posts.map((post) => (
-        <Post
-          key={post.id}
-          name={post.name}
-        />
-      ))}
+      <div className="">
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            {...post}
+          />
+        ))}
+      </div>
     </div>
   );
 };

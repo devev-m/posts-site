@@ -1,3 +1,14 @@
-.root {
-   text-align: center;
+.header {
+   background-color: rgb(182, 182, 241);
+   padding: 10px 0;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+
+   span {
+      color: #fff;
+      font-weight: 600;
+   }
 }
